@@ -72,6 +72,7 @@ func main() {
 				atomic.AddInt64(&amounts[i], 1) // Потокобезопасно увеличиваем статистику
 			}
 		}(i)
+
 	}
 
 	go func() {
